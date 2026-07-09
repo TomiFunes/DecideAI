@@ -8,7 +8,7 @@
 
 Analyze important decisions using structured reasoning, scenario simulation, risk evaluation, and AI-generated insights.
 
-https://YOUR-USERNAME.github.io/DecideAI/
+https://tomifunes.github.io/DecideAI/
 
 </div>
 
@@ -143,7 +143,7 @@ _Add screenshot here_
 
 ## Live Demo
 
-👉 https://YOUR-USERNAME.github.io/DecideAI/
+👉 https://tomifunes.github.io/DecideAI/
 
 ---
 
