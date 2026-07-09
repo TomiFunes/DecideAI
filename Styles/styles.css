@@ -3,7 +3,7 @@ body {
 
   background:
     linear-gradient(rgba(8, 15, 35, 0.85), rgba(8, 15, 35, 0.85)),
-    url("/media/bgai.png");
+    url("media/bgai.png");
 
   background-size: cover;
   background-position: center;
