@@ -21,6 +21,29 @@ body {
   padding: 40px 20px;
   box-sizing: border-box;
 }
+.app-container {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 40px auto;
+
+  padding: 35px;
+
+  position: relative;
+
+  background: rgba(17, 24, 39, 0.45);
+
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(96, 165, 250, 0.2);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.45),
+    0 0 40px rgba(59, 130, 246, 0.1);
+}
 
 .hero-section {
   text-align: center;
@@ -28,6 +51,27 @@ body {
   padding: 60px 20px;
 
   animation: heroFade 1s ease;
+}
+
+.app-container::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 2px;
+
+  border-radius: 20px 20px 0 0;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #60a5fa,
+    transparent
+  );
 }
 
 .hero-title {
