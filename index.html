@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DecideAI</title>
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta http-equiv="Pragma" content="no-cache" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Roboto+Slab:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/Styles/styles.css" />
+  </head>
+
+  <body>
+    <div class="language-selector">
+      <button id="lang-en" onclick="setLanguage('en')">🇬🇧 English</button>
+
+      <button id="lang-es" onclick="setLanguage('es')">🇪🇸 Español</button>
+    </div>
+    <div id="notification" class="notification hidden"></div>
+
+    <div id="heroSection" class="hero-section">
+      <div class="logo">
+        <img src="/media/logodecideai.png" />
+      </div>
+
+      <h1 id="heroTitle" class="hero-title">Make Better Decisions</h1>
+
+      <h1 id="heroTyping" class="hero-title-blue"></h1>
+
+      <p id="heroDescription" class="hero-description">
+        Analyze complex choices, evaluate risks and gain confidence before
+        making your next important decision.
+      </p>
+
+      <button id="startBtn" class="hero-button" onclick="startApp()">
+        Start Analysis
+      </button>
+    </div>
+
+    <div id="mainApp" class="hidden">
+      <div class="app-header">
+        <div class="logo-small"><img src="/media/logodecideai.png" /></div>
+      </div>
+
+      <div id="step1">
+        <p id="decisionQuestion">What decision are you trying to make?</p>
+
+        <textarea id="decision"></textarea>
+
+        <button id="continueBtn" onclick="nextStep()">Continue</button>
+      </div>
+
+      <div id="step2" class="hidden">
+        <button id="backBtn1" class="secondary-btn" onclick="backToStep1()">
+          ← Back
+        </button>
+
+        <p id="q1">Why are you unsure?</p>
+        <textarea id="answer1"></textarea>
+
+        <p id="q2">What do you want to achieve?</p>
+        <textarea id="answer2"></textarea>
+
+        <p id="q3">What worries you most?</p>
+        <textarea id="answer3"></textarea>
+
+        <button id="analyzeBtn" onclick="generateResult()">Analyze</button>
+      </div>
+
+      <div id="step3" class="hidden">
+        <button id="backBtn2" class="secondary-btn" onclick="backToStep2()">
+          ← Back
+        </button>
+
+        <h3 id="recommendationTitle">Recommendation</h3>
+
+        <div id="resultText" class="result">Loading...</div>
+
+        <button id="newDecisionBtn" onclick="resetDecision()">
+          🔄 New Decision
+        </button>
+      </div>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
