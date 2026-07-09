@@ -16,7 +16,7 @@ https://tomifunes.github.io/DecideAI/
 
 ## Overview
 
-DecideAI is a web-based application designed to help individuals make better decisions with clarity and confidence.
+DecideAI is a web-based application designed to help individuals make better decisions with clarity and confidence. 
 
 Instead of providing generic advice, DecideAI guides users through a structured decision-making process and leverages Artificial Intelligence to analyze their situation, evaluate risks, identify key factors, and project potential outcomes.
 
